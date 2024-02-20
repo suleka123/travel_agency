@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PageController!{% endblock %}
+
+{% block body %}
+<h1>Travel Agency</h1>
+<p>Travel agents book business and leisure travel for customers.</p>
+<h2>read more</h2>
+{% if post %}
+<ul>
+    {% for post in posts %}
+    <li>{{ post.tittle}}</li>
+</ul>
+{% endif %}
+{% endblock %}
